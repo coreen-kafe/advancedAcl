@@ -3,9 +3,9 @@
 0. 주요파일들을 simplesamlphp/modules 등의 디렉토리에 복사합니다.
 
 simplesamlphp/config/config-acl.php
-simplesamlphp/modules/coreenAcl/lib/Auth/Process/UserAcl.php
-simplesamlphp/modules/coreenAcl/www/error.php
-simplesamlphp/modules/coreenAcl/enable
+simplesamlphp/modules/advancedAcl/lib/Auth/Process/UserAcl.php
+simplesamlphp/modules/advancedAcl/www/error.php
+simplesamlphp/modules/advancedAcl/enable
 
 1. simplesamlphp/config/config-acl.php 의 설정
 
@@ -16,7 +16,7 @@ simplesamlphp/modules/coreenAcl/enable
  authproc.ip 항목중 아래의 같은 형태로 적용합니다.
 
     'authproc.idp' => array(
-		9 => 'coreenAcl:UserAcl',
+		9 => 'advancedAcl:UserAcl',
 
 
 3. 정상적으로 설정이 적용되고 있는지 확인합니다.

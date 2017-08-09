@@ -1,7 +1,7 @@
 <?php
 
 /**
- * advancedACL Authentication Processing filter
+ * AdvancedACL Authentication Processing filter
  *
  *
  *	'roles' => array(

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CoreenACL Authentication Processing filter
+ * advancedACL Authentication Processing filter
  *
  *
  *	'roles' => array(
@@ -33,7 +33,7 @@
  *
  * @package simpleSAMLphp
  */
-class sspmod_coreenAcl_Auth_Process_UserAcl extends SimpleSAML_Auth_ProcessingFilter
+class sspmod_advancedAcl_Auth_Process_UserAcl extends SimpleSAML_Auth_ProcessingFilter
 {
 	/** @var 접근제어 규칙 */
 	private $roles;
@@ -120,7 +120,7 @@ class sspmod_coreenAcl_Auth_Process_UserAcl extends SimpleSAML_Auth_ProcessingFi
 
         if ($isEligible === false) {
 			//SimpleSAML_Logger::notice(json_encode($state));
-            $url = SimpleSAML_Module::getModuleURL('coreenAcl/error.php');
+            $url = SimpleSAML_Module::getModuleURL('advancedAcl/error.php');
 			$this->state['useracl:error'] = $error;
 
 			$sp_url_tmp = parse_url($this->state['SPMetadata']['AssertionConsumerService'][0]['Location']);

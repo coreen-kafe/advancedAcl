@@ -16,7 +16,7 @@ simplesamlphp/modules/coreenAcl/enable
  authproc.ip 항목중 아래의 같은 형태로 적용합니다.
 
     'authproc.idp' => array(
-		9 => 'coreenAcl:UserAcl',
+		9 => 'advancedAcl:UserAcl',
 
 
 3. 정상적으로 설정이 적용되고 있는지 확인합니다.
